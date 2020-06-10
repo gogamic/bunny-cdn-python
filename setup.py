@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="bunny-cdn", 
+    name="bunnycdn", 
     version="0.0.7",
     author="Raghav Mri",
     author_email="raghav@gogamic.com",
