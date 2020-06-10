@@ -18,7 +18,6 @@ As of now there are 4 commands whch are listed below with their patrameters
 
 # INFO
 1. This is not a official bunny cdn module
-<br>
 2. ssl must be an Boolean value
 <br>
 3. api and ID must be an Integer 
