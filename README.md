@@ -6,8 +6,11 @@ This is a bunny cdn python module for buny cdn API
 # How to Use IT
 As of now there are 4 commands whch are listed below with their patrameters
 1.create_pull_zone(api, name, original_url, type)
+<br>
 2.delete_pull_zone(api, id)
+<br>
 3.purge_cache(api, id)
+<br>
 4.add_host_name(api, id, Hostname)
 
 # INFO
