@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 bunnycdn
 =======
 bunny-cdn
 >>>>>>> Added basic functions
+=======
+bunnycdn
+>>>>>>> Updates descrption

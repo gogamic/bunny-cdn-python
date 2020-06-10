@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: bunny-cdn
+Version: 0.0.5
+Summary: A small example package
+Home-page: https://github.com/gogamic/bunny-cdn-python
+Author: Raghav Mri
+Author-email: raghav@gogamic.com
+License: UNKNOWN
+Description: # bunny-cdn-python 
+        Bunny CDN is the fastest and Cheapest CDN
+        
+        This is a bunny cdn python module for buny cdn API 
+        
+        # How to Use IT
+        As of now there are 4 commands whch are listed below with their patrameters
+        1.create_pull_zone(api, name, original_url, type)
+        2.delete_pull_zone(api, id)
+        3.purge_cache(api, id)
+        4.add_host_name(api, id, Hostname)
+        
+        # INFO
+        1. This is not a official bunny cdn module
+        
+        
+        
+Keywords: Bunny-CDN-API,CDN,Bunny-cdn
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
