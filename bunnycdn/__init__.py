@@ -63,7 +63,56 @@ def add_host_name(api, id, Hostname):
     if r.status_code == 200:
         return "Host added!!!"
     else:
-        return r.content                
+        return r.content  
+
+def force_ssl(api, id, Hostname, ssl):
+    values= {
+    "PullZoneId": id,
+    "Hostname": Hostname,
+    "ForceSSL": ssl,
+    }
+
+    headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'AccessKey':api,
+    }
+    r = requests.post(f'https://bunnycdn.com/api/pullzone/setForceSSL',data= json.dumps(values), headers=headers)
+    print(r.status_code)
+    if r.status_code == 200:
+        return "Ssl forced!!!"
+    else:
+        return r.content                        
+
+
+def get_free_ssl(api, Hostname):
+    headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'AccessKey':api,
+    }
+    r = requests.post(f'https://bunnycdn.com/api/pullzone/loadFreeCertificate?hostname={Hostname}',data= json.dumps(values), headers=headers)
+    print(r.status_code)
+    if r.status_code == 200:
+        return "Ssl forced!!!"
+    else:
+        return r.content                        
+
+
+def billing_info(api, Hostname):
+    headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'AccessKey':api,
+    }
+    r = requests.post(f'https://bunnycdn.com/api/billing', headers=headers)
+    print(r.status_code)
+    if r.status_code == 200:
+        return "Sucess" + r.content
+    else:
+        return r.content  
+
+                                
 
 
       

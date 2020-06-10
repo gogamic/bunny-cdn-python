@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: bunny-cdn
-Version: 0.0.5
-Summary: A small example package
+Version: 0.0.6
+Summary: A python Module for Bunny Cdn API
 Home-page: https://github.com/gogamic/bunny-cdn-python
 Author: Raghav Mri
 Author-email: raghav@gogamic.com
