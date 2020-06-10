@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+bunnycdn/__init__.py
+bunnycdn.egg-info/PKG-INFO
+bunnycdn.egg-info/SOURCES.txt
+bunnycdn.egg-info/dependency_links.txt
+bunnycdn.egg-info/top_level.txt
