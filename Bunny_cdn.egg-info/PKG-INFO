@@ -1,6 +1,10 @@
 Metadata-Version: 2.1
 Name: Bunny-cdn
+<<<<<<< HEAD
 Version: 0.0.3
+=======
+Version: 0.0.2
+>>>>>>> Added basic functions
 Summary: A small example package
 Home-page: https://github.com/gogamic/bunny-cdn-python
 Author: Raghav Mri

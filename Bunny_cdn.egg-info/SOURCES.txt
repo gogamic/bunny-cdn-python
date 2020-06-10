@@ -5,4 +5,8 @@ Bunny_cdn.egg-info/PKG-INFO
 Bunny_cdn.egg-info/SOURCES.txt
 Bunny_cdn.egg-info/dependency_links.txt
 Bunny_cdn.egg-info/top_level.txt
+<<<<<<< HEAD
 bunnycdn/__init__.py
+=======
+bunny-cdn/__init__.py
+>>>>>>> Added basic functions
