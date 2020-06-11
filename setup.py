@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="bunnycdn", 
-    version="0.0.1",
+    version="0.0.2",
     author="Raghav Mri",
     author_email="raghav@gogamic.com",
     description="A python Module for Bunny Cdn API",
