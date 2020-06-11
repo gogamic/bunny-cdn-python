@@ -28,6 +28,7 @@ api = "Your API key"
 
 purge = bunnycdn.purge_cache(api, 1234)
 print(purge)
+'''
       
 
 # INFO
