@@ -14,7 +14,21 @@ As of now there are 4 commands whch are listed below with their patrameters
 <br>
 4.add_host_name(api, id, Hostname)
 <br>
-5.force_ssl(api, id, Hostname, ssl)* 
+5.force_ssl(api, id, Hostname, ssl)
+<br>
+6.get_free_ssl(api, Hostname)
+<br>
+7.billing_info(api, Hostname)
+
+
+# Example
+'''
+import bunnycdn
+api = "Your API key"
+
+purge = bunnycdn.purge_cache(api, 1234)
+print(purge)
+      
 
 # INFO
 1. This is not a official bunny cdn module
