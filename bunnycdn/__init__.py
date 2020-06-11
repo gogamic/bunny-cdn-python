@@ -18,7 +18,7 @@ def create_pull_zone(api, name, original_url, type):
     if r.status_code == 201:
         return "Pull Zone Created and here are the details" + r.content
     else:
-        return r.content
+        return str(r.content)
 
 def delete_pull_zone(api, id):
     headers = {
@@ -31,7 +31,7 @@ def delete_pull_zone(api, id):
     if r.status_code == 204:
         return "Pull Zone Delted!!!"
     else:
-        return r.content
+        return str(r.content)
 
 
 def purge_cache(api, id):
@@ -45,7 +45,7 @@ def purge_cache(api, id):
     if r.status_code == 200:
         return "Purged!!!"
     else:
-        return r.content 
+        return str(r.content) 
 
 def add_host_name(api, id, Hostname):
     values= {
@@ -63,7 +63,7 @@ def add_host_name(api, id, Hostname):
     if r.status_code == 200:
         return "Host added!!!"
     else:
-        return r.content  
+        return str(r.content)  
 
 def force_ssl(api, id, Hostname, ssl):
     values= {
@@ -82,7 +82,7 @@ def force_ssl(api, id, Hostname, ssl):
     if r.status_code == 200:
         return "Ssl forced!!!"
     else:
-        return r.content                        
+        return str(r.content)                        
 
 
 def get_free_ssl(api, Hostname):
@@ -96,7 +96,7 @@ def get_free_ssl(api, Hostname):
     if r.status_code == 200:
         return "Ssl forced!!!"
     else:
-        return r.content                        
+        return str(r.content)                        
 
 
 def billing_info(api, Hostname):
@@ -108,11 +108,51 @@ def billing_info(api, Hostname):
     r = requests.post(f'https://bunnycdn.com/api/billing', headers=headers)
     print(r.status_code)
     if r.status_code == 200:
-        return "Sucess" + r.content
+        return "Sucess" + str(r.content)
     else:
-        return r.content  
+        return str(r.content) 
 
-                                
+
+def add_newblocked_ip(api, pullzoneid, ip):
+    values ={
+    "PullZoneId": int(pullzoneid),
+    "BlockedIp": ip,
+     }
+    headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'AccessKey':api,
+    }
+    r = requests.post(f'https://bunnycdn.com/api/pullzone/addBlockedIp', data = json.dumps(values), headers=headers)
+    print(r.status_code)
+    if r.status_code == 200:
+        return "Sucess" + str(r.content)
+    else:
+        return str(r.content)   
+
+def remove_blocked_ip(api, pullzoneid, ip):
+    values ={
+    "PullZoneId": int(pullzoneid),
+    "BlockedIp": float(ip)
+     }
+    headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'AccessKey':api,
+    }
+    r = requests.post(f'https://bunnycdn.com/api/pullzone/removeBlockedIp', data = json.dumps(values), headers=headers)
+    print(r.status_code)
+    if r.status_code == 200:
+        return "Sucess" + str(r.content)
+    else:
+        return str(r.content)                  
+
+
+
+api = "497f3d99-062d-4c08-9b5c-e7eaaef11c63465c47c7-af4a-4d29-bfd8-c8b41bc625aa"
+ip =  '123.123.23.25'
+test = add_newblocked_ip(api, 140483, ip)    
+print(test)                            
 
 
       

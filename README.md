@@ -19,6 +19,11 @@ As of now there are 4 commands whch are listed below with their patrameters
 6.get_free_ssl(api, Hostname)
 <br>
 7.billing_info(api, Hostname)
+<br>
+8.add_newblocked_ip(api, pullzoneid, ip)
+<br>
+9.remove_blocked_ip(api, pullzoneid, ip)
+
 
 
 # Example
@@ -35,5 +40,6 @@ print(purge)
 1. This is not a official bunny cdn module
 2. ssl must be an Boolean value
 3. api and ID must be an Integer 
+4. ip must be an string
 
 
