@@ -22,13 +22,11 @@ As of now there are 4 commands whch are listed below with their patrameters
 
 
 # Example
-'''
-import bunnycdn
+```import bunnycdn
 api = "Your API key"
 
 purge = bunnycdn.purge_cache(api, 1234)
-print(purge)
-'''
+print(purge)```
       
 
 # INFO
