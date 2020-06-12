@@ -1,0 +1,28 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "bunnycdb",
+  "version": "0.0.1",
+  "description": "A simple Node libary that intergrates wiht bunnycdn api.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node bunnycdn.js"
+  },
+  "dependencies": {
+    "request": "^2.88.2",
+    "axios": "^0.19.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/gogamic/bunny-cdn-python/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bunnycdn",
+    "CDN",
+    "bunnycdnapi"
+  ]
+}
