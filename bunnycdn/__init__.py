@@ -58,7 +58,7 @@ def add_host_name(api, id, Hostname):
     'Accept': 'application/json',
     'AccessKey':api,
     }
-    r = requests.post(f'https://bunnycdn.com/api/pullzone/{id}/purgeCache',data= json.dumps(values), headers=headers)
+    r = requests.post(f'https://bunnycdn.com/api/pullzone/addHostname',data= json.dumps(values), headers=headers)
     print(r.status_code)
     if r.status_code == 200:
         return "Host added!!!"
@@ -99,7 +99,7 @@ def get_free_ssl(api, Hostname):
         return str(r.content)                        
 
 
-def billing_info(api, Hostname):
+def billing_info(api):
     headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
@@ -149,10 +149,6 @@ def remove_blocked_ip(api, pullzoneid, ip):
 
 
 
-api = "497f3d99-062d-4c08-9b5c-e7eaaef11c63465c47c7-af4a-4d29-bfd8-c8b41bc625aa"
-ip =  '123.123.23.25'
-test = add_newblocked_ip(api, 140483, ip)    
-print(test)                            
 
 
       
